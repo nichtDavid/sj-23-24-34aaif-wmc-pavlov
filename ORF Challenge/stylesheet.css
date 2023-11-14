@@ -1,0 +1,41 @@
+body {
+  font-family: 'Source Sans Pro';
+}
+
+.section1 {
+  background-color: steelblue;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.section2 {
+  padding: 2rem 1rem;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #16416B;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+li a:active {
+  background-color: steelblue;
+}
+
+li a:hover {
+  background-color: steelblue;
+}
