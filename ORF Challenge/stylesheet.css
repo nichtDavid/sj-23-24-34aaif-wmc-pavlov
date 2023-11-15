@@ -1,16 +1,66 @@
 body {
   font-family: 'Source Sans Pro';
+  max-width: 1000px;
+  margin: auto;
+}
+
+#news {
+  font-size: 3.25rem;
+  color:white;
 }
 
 .section1 {
   background-color: steelblue;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   color: white;
 }
 
 .section2 {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   color: black;
+}
+
+.section2 p {
+  padding: 0rem 2rem;
+}
+
+.putinquote {
+  background-color: lightblue;
+  border-left: 1rem solid dodgerblue;
+  font-display: center;
+}
+
+.putinquote img {
+  padding: 2rem 1rem 2rem 2rem;
+  align-self: center;
+  max-width: 30%;
+  max-height: auto;
+  display: inline;
+}
+
+.putinquote p {
+  padding-bottom: 2rem;
+}
+
+.orfzentrum {
+  font-style: italic;
+}
+
+a {
+  text-decoration:none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  padding: 0rem 2rem;
+}
+
+aside {
+  padding-left: 35rem;
+  vertical-align: middle;
 }
 
 ul {
@@ -29,11 +79,7 @@ li a {
   color: white;
   text-align: center;
   padding: 1rem 2rem;
-  text-decoration: none;
-}
-
-li a:active {
-  background-color: steelblue;
+  
 }
 
 li a:hover {
