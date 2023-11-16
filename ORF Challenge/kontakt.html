@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source%20Sans%20Pro' rel='stylesheet'>
     <title>Kontakt</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">News</a></li>
-                <li><a href="#">Ö3 Top 40</a></li>
+                <li><a href="ö3_top_40.html">Ö3 Top 40</a></li>
                 <li><a href="kontakt.html">Contact</a></li>
             </ul>
         </nav>
@@ -24,40 +24,41 @@
                 <a href="orf.at"><img src="img/orflogo.svg" alt="ORF"></a>
             </header>
             <article>
-                <p class="orfzentrum">
+                <h2 class="orfzentrum">
                     ORF-Zentrum <br>
                     Würzburggasse <br>
                     1136 Wien
-                </p>
+                </h2>
             </article>
         </section>
 
-        <section>
-            <a>Ihr Name:</a>
+        <section class="contactInput">
+            <label>Ihr Name:</label>
             <br>
-            <input>
+            <input type="text">
             <br>
-            <a>Ihre E-Mail:</a>
+            <label>Ihre E-Mail:</label>
             <br>
-            <input>
+            <input type="email">
             <br>
-            <a>Ihre Nachricht:</a>
+            <label>Ihre Nachricht:</label>
             <br>
-            <input>
+            <textarea rows="10" cols="50"></textarea>
             <br>
             <input type="checkbox">
             <a>Lorem ipsum dolor sit amet, consecteur adipiscing elit. Earum explicabo molestiae mteneurteur totam.Alias delecturs dicta eius eligenda epexditat iste iusto nescjunt</a>
             <br>
-            <button>Abschicken</button>
+            <button type="submit">Abschicken</button>
         </section>
     </main>
 
     <footer>
-        <ul>
-            <li><a href="#">IMPRESSUM</a></li>
-            <li><a href="#">DATENSCHUTZ</a></li>
-            
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#Impressum">IMPRESSUM</a></li>
+                <li><a href="#Datenschutz">DATENSCHUTZ</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
