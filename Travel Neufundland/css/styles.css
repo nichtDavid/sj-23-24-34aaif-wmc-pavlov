@@ -1,0 +1,57 @@
+body {
+    font-family: 'Source Sans Pro';
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.headertext {
+    
+    position: absolute;
+    z-index: 9;
+    top: 25%;
+    text-align: right;
+    right: 0;
+    margin: 2rem;
+    color: white;
+}
+
+.headertext h1 {
+    font-size: calc(5vw + 1rem);
+    margin: 0 auto;
+ }
+
+.headertext h2 {
+    font-size: calc(2vw + 1rem);
+    margin: 0 auto;
+}
+
+.unesco {
+    background-color: white;
+    padding: 5rem;
+    
+}
+
+.unesco img {
+    vertical-align: middle;
+}
+
+.unesco h2 {
+    display: inline-block;
+}
+
+.unesco p {
+    display: inline-block;
+}
+
+.guide {
+    text-align: center;
+    background-color: white;
+    padding: 2px;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+
