@@ -1,19 +1,19 @@
+/* -- Overall -- */
 body {
     font-family: 'Source Sans Pro';
     background-image: url("../img/header.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    
 }
 
+/* -- Header -- */
 .headertext {
-    
-    position: absolute;
     z-index: 9;
     top: 25%;
     text-align: right;
     right: 0;
+    padding: 200px;
     margin: 2rem;
     color: white;
 }
@@ -28,24 +28,6 @@ body {
     margin: 0 auto;
 }
 
-.unesco {
-    background-color: white;
-    padding: 5rem;
-    
-}
-
-.unesco img {
-    vertical-align: middle;
-}
-
-.unesco h2 {
-    display: inline-block;
-}
-
-.unesco p {
-    display: inline-block;
-}
-
 .guide {
     text-align: center;
     background-color: white;
@@ -53,5 +35,40 @@ body {
     margin-left: 15rem;
     margin-right: 15rem;
 }
+
+.guide p {
+    font-style: italic;
+    
+}
+
+.guide img {
+    width: 65px;
+    border-radius: 50%;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+.intro {
+    background-color: white;
+    padding: 5rem;
+}
+
+.intro img {
+    vertical-align: middle;
+    box-shadow: 2px 2px 5px black;
+}
+
+.intro h2, p {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.intro aside {
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+
 
 
