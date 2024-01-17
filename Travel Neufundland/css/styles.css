@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    margin: 0;
 }
 
 /* -- Header -- */
@@ -106,8 +107,29 @@ main {
     Width: calc(500px)
 }
 
+.discoveryheader {
+    display: flex;
+}
+
+.discoveryheader img {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+}
+
 footer {
-    background-image: url("../img/header.jpg");
+    color: white;
+    background-image: url("../img/footerimage.jpg");
+    background-size: cover;
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 400px;
+}
+
+.footertext {
+    margin-left: 700px;
+    margin-right: 700px;
 }
 
 
