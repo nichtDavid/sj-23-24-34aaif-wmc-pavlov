@@ -59,7 +59,16 @@ main {
     padding: 5rem;
 }
 
+.introarticle {
+    display: flex;
+}
 
+.introarticletext {
+    flex-wrap: wrap;
+    padding: 25px;
+    margin: auto;
+    font-size: 25px;
+}
 
 .intro img {
     vertical-align: middle;
@@ -68,8 +77,9 @@ main {
 
 .intro article {
     line-height: 2;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
 } 
 
 .travelvideo {
@@ -93,7 +103,7 @@ main {
     gap: 1rem;
 }
 
-.flex-container-discovery li, h1 {
+.flex-container-discovery li, .flex-container-discovery h1 {
     flex-grow: 1;
     flex-shrink: 1;
     margin-left: 50px;
@@ -103,8 +113,8 @@ main {
 }
 
 .flex-container-discovery img {
-    Height: 500px;
-    Width: calc(500px)
+    Height: calc(500px);
+    Width: calc(500px);
 }
 
 .discoveryheader {
@@ -114,8 +124,8 @@ main {
 .discoveryheader img {
     height: 50px;
     width: 50px;
-    padding: 0;
-    margin: 0;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 footer {
@@ -130,6 +140,43 @@ footer {
 .footertext {
     margin-left: 700px;
     margin-right: 700px;
+    font-size: 25px;
+}
+
+.inputemail {
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+    font-size: 50px;
+}
+
+::placeholder
+{
+    color: white;
+}
+
+.signupbutton {
+    border-style: solid;
+    border-color: white;
+    background: none;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+
+.socials {
+    padding-top: 100px;
+    display: flex;
+    margin: 0 auto;
+    Height: calc(80px);
+    Width: calc(80px);
+    gap: 1rem;
 }
 
 
