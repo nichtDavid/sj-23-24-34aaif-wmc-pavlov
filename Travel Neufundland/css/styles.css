@@ -174,8 +174,9 @@ footer {
 
 .socials {
     padding-top: 100px;
+    padding-right: 180px;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     Height: 80px;
     Width: 80px;
     gap: 1rem;
