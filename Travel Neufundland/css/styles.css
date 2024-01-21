@@ -1,7 +1,7 @@
 /* -- Overall -- */
 body {
     font-family: 'Source Sans Pro';
-    background-image: url("../img/header.jpg");
+    background-image: url("https://www.weltgewandt.de/app/uploads/2023/05/115888-Newfoundland-And-Labrador.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -10,19 +10,15 @@ body {
 
 /* -- Header -- */
 .headertext {
-    z-index: 9;
-    top: 25%;
     text-align: right;
-    right: 0;
-    padding: 150px;
-    margin: 2rem;
+    padding: 200px;
     color: white;
 }
 
 .headertext h1 {
     font-size: calc(5vw + 1rem);
     margin: 0 auto;
- }
+}
 
 .headertext h2 {
     font-size: calc(2vw + 1rem);
@@ -37,9 +33,11 @@ main {
     text-align: center;
     background-color: white;
     padding: 2px;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin: auto;
+    width: calc(100% - 15rem);
 }
+
+
 
 .guide p {
     font-style: italic;
@@ -71,15 +69,17 @@ main {
 }
 
 .intro img {
-    vertical-align: middle;
+    
     box-shadow: 2px 2px 5px black;
 }
 
 .intro article {
     line-height: 2;
-    font-size: 25px;
-    margin-left: 300px;
-    margin-right: 300px;
+    font-size: calc(30px - 5px);
+    max-width: 65%;
+    width: calc(65% + 40%);
+    
+    margin: auto;
 } 
 
 .travelvideo {
@@ -132,14 +132,16 @@ footer {
     color: white;
     background-image: url("../img/footerimage.jpg");
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
-    padding-top: 400px;
-    padding-bottom: 400px;
+    padding-top: 300px;
+    padding-bottom: 300px;
 }
 
 .footertext {
-    margin-left: 700px;
-    margin-right: 700px;
+    padding: 50px;
+    width: 75%;
+    margin: auto;
     font-size: 25px;
 }
 
@@ -173,9 +175,9 @@ footer {
 .socials {
     padding-top: 100px;
     display: flex;
-    margin: 0 auto;
-    Height: calc(80px);
-    Width: calc(80px);
+    margin: auto;
+    Height: 80px;
+    Width: 80px;
     gap: 1rem;
 }
 
