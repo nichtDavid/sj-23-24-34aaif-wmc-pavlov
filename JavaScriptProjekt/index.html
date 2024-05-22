@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"></style>
+    <title>Book list</title>
+</head>
+<body>
+    <section>
+        <form action="#" method="post">
+            <fieldset class="form-group">
+                <label for="book-name">Book Name:</label>
+                <input type="text" id="book-name" name="book-name" required>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" required>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="hardcover">
+                    <input type="checkbox" id="hardcover" name="hardcover">
+                    Hardcover
+                </label>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+            </fieldset>
+            <fieldset class="form-group">
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+    <script src="js/gamescript.js"></script>
+</body>
+</html>

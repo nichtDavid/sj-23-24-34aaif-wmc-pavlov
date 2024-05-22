@@ -120,6 +120,7 @@ main {
 .flex-container-discovery img {
     height: calc(450px - 25px);
     width: calc(450px - 25px);
+    
 }
 
 .discoveryheader {
