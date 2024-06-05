@@ -8,7 +8,7 @@ class Book
     #price;
 
     constructor(title, author, genre, hardcover, price)
-    {
+    {   
         this.#title = title;
         this.#author = author;
         this.#genre = genre;
@@ -19,6 +19,16 @@ class Book
     get Title()
     {
         return this.#title;
+    }
+
+    set title(text)
+    {
+        if(typeof text !== 'string' || text === "")
+        {
+            console.log("Fehler");
+            throw new Error('Invalid Title');
+        }
+        this.#title = text;
     }
 
     get Author()
@@ -44,6 +54,7 @@ class Book
 
 const state = {
     books: [
+        new Book('Die Wolke', 'Gudrun Pausewang', 'Roman', false, 9.99),
         new Book('Fourth Wing', 'Rebecca Yarros', 'Fantasy', false, 13.99),
         new Book('Wir Kinder vom Bahnhof Zoo', 'Christiane Felscherinow', 'Biografie', false, 10.99),
         new Book('Sadako will leben', 'Karl Bruckner', 'Roman', true, 12.99)
@@ -73,6 +84,8 @@ const authorInput = document.getElementById('author');
 const genreInput = document.getElementById('genre');
 const hardcoverInput = document.getElementById('hardcover');
 const priceInput = document.getElementById('price');
+
+const sortButton = document.getElementById('dropdownButton');
 
 //4. DOM Node Creation Functions
 function createBookElement(book)
@@ -130,8 +143,55 @@ function delBookBtn(book)
     render();
 }
 
+function sortingValue() {
+    switch(sortButton.value) {
+        case "Title":
+            return state.books.sort((a, b) => {
+                if (a.Title < b.Title) {
+                    return -1;
+                }
+                if (a.Title > b.Title) {
+                    return 1;
+                }
+                return 0;
+            });
+        
+        case "Author":
+            return state.books.sort((a, b) => {
+                if (a.Author < b.Author) {
+                    return -1;
+                }
+                if (a.Author > b.Author) {
+                    return 1;
+                }
+                return 0;
+            });
+        case "Genre":
+            return state.books.sort((a, b) => {
+                if (a.Genre < b.Genre) {
+                    return -1;
+                }
+                if (a.Genre > b.Genre) {
+                    return 1;
+                }
+                return 0;
+            });
+        case "Price":
+            return state.books.sort((a, b) => {
+                return a.Price - b.Price;
+            });
+    }
+}
+
+function sorting()
+{
+    sortingValue();
+    render();
+}
+
 //7. Initial Bindings
 bookAdd.addEventListener('click', addBookBtn);
+sortButton.addEventListener('change', sorting);
 
 //8. Initial Render
 render();
