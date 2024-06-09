@@ -1,34 +1,72 @@
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
+body {
+  font-family: Arial;
+  color: pink;
+  background-color: rgb(3, 0, 48);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  padding: 0rem 20rem 0rem 20rem;
+  border-radius: 4px;
+  box-shadow: 2.5rem;
+  width: 100%;
+  /*border: 10px solid blue;*/
+  display: inline;
+}
+
+th {
+  color: rgb(190, 0, 190);
+  text-align: left;
   
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+}
+
+button, select, option {
+  transition: all .5s ease;
+  color: rgb(190, 0, 190);
+  border: 3px solid rgb(190, 0, 190);
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+
+option {
+  background-color: rgb(3, 0, 48);
+}
+
+button:hover {
+  color: black;
+  background-color: rgb(190, 0, 190);
+}
+
+input[type=text], input[type=number] {
   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  padding: 6px 12px;
+  background: rgb(31, 32, 35);
+  border: 1px solid rgb(190, 0, 190);
+  border-radius: 4px;
+  font-size: 13px;
+  color: rgb(247, 248, 248);
+  height: 46px;
+  appearance: none;
+  transition: border 0.15s ease 0s;
+  :focus{
+      outline: none;
+      box-shadow: none;
+      border-color: rgb(100, 153, 255);
   }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+}
+
+fieldset {
+  border: 0;
+}
+
