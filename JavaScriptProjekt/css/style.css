@@ -10,7 +10,7 @@ body {
 
 table {
   border-radius: 4px;
-  box-shadow: 2.5rem;
+  box-shadow: 5px 5px 5px black;
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
@@ -34,6 +34,7 @@ form {
 aside {
   flex: 3;
   padding: 10px;
+  box-shadow: 5px 5px 5px black;
 }
 
 
