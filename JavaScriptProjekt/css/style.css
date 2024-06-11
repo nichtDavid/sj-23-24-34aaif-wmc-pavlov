@@ -90,6 +90,15 @@ input[type=text], input[type=number] {
 
 }
 
+input[type="checkbox"] {
+  display:block;
+  accent-color: #ff94e2;
+  color: black;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
 fieldset {
   border: 0;
 }

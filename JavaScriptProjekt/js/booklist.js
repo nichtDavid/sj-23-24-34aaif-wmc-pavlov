@@ -135,7 +135,7 @@ function render()
 function addBookBtn()
 {
     event.preventDefault();
-    addNewBookToState(titleInput.value, authorInput.value, genreInput.value, hardcover.value, parseFloat(priceInput.value));
+    addNewBookToState(titleInput.value, authorInput.value, genreInput.value, hardcoverInput.checked, parseFloat(priceInput.value));
     render();
 }
 
@@ -193,8 +193,7 @@ function sorting()
 
 function calculateValue()
 {
-    debugger;
-    valueView.innerHTML = ' ';
+    valueView.innerHTML = '';
     let result = 0;
     state.books.forEach(book => {
         result += book.Price;
@@ -206,6 +205,7 @@ function calculateValue()
 bookAdd.addEventListener('click', addBookBtn);
 sortButton.addEventListener('change', sorting);
 calculateButton.addEventListener('click', calculateValue);
+
 
 //8. Initial Render
 render();
