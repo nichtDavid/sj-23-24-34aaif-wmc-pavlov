@@ -86,6 +86,8 @@ const hardcoverInput = document.getElementById('hardcover');
 const priceInput = document.getElementById('price');
 
 const sortButton = document.getElementById('dropdownButton');
+const calculateButton = document.getElementById('calculate-value');
+const valueView = document.getElementById('value-view');
 
 //4. DOM Node Creation Functions
 function createBookElement(book)
@@ -133,7 +135,7 @@ function render()
 function addBookBtn()
 {
     event.preventDefault();
-    addNewBookToState(titleInput.value, authorInput.value, genreInput.value, hardcover.value, priceInput.value);
+    addNewBookToState(titleInput.value, authorInput.value, genreInput.value, hardcover.value, parseFloat(priceInput.value));
     render();
 }
 
@@ -189,9 +191,21 @@ function sorting()
     render();
 }
 
+function calculateValue()
+{
+    debugger;
+    valueView.innerHTML = ' ';
+    let result = 0;
+    state.books.forEach(book => {
+        result += book.Price;
+    });
+    valueView.innerHTML = 'List Value: ' + result;
+}
+
 //7. Initial Bindings
 bookAdd.addEventListener('click', addBookBtn);
 sortButton.addEventListener('change', sorting);
+calculateButton.addEventListener('click', calculateValue);
 
 //8. Initial Render
 render();

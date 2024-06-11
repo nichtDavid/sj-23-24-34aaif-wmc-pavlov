@@ -3,66 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"></style>
+    <link rel="stylesheet" href="css/style.css">
     <title>Book list</title>
 </head>
 <body>
-    <section>
-        <form action="#" method="post">
-            <fieldset class="form-group">
-                <label for="book-name">Book Title:</label>
-                <input type="text" id="book-title" name="book-name" required>
-            </fieldset>
-            <fieldset class="form-group">
-                <label for="author">Author:</label>
-                <input type="text" id="author" name="author" required>
-            </fieldset>
-            <fieldset class="form-group">
-                <label for="genre">Genre:</label>
-                <input type="text" id="genre" name="genre" required>
-            </fieldset>
-            <fieldset class="form-group">
-                <label for="hardcover">
-                    <input type="checkbox" id="hardcover" name="hardcover">
-                    Hardcover
-                </label>
-            </fieldset>
-            <fieldset class="form-group">
-                <label for="price">Price:</label>
-                <input type="number" id="price" name="price" step="0.01" required>
-            </fieldset>
-            <fieldset class="form-group">
-                <button id="book-add" type="submit">Add Book</button>
-            </fieldset>
-        </form>
-    </section>
-    <section>
-        <h2>Book List</h2>
-        <h4>Sort</h3>
-        
-        <select name="sorting" id="dropdownButton">
-            <option value="" disabled selected hidden>Sortieren</option>
-            <option value="Title">Title</option>
-            <option value="Author">Author</option>
-            <option value="Genre">Genre</option>
-            <option value="Price">Price</option>
-        </select>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Genre</th>
-                    <th>Hardcover</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody id="book-list">
+    <main>
+        <section id="section1">
+            <form action="#" method="post">
+                <fieldset class="form-group">
+                    <label for="book-name">Book Title:</label>
+                    <input type="text" id="book-title" name="book-name" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="hardcover">
+                        <input type="checkbox" id="hardcover" name="hardcover">
+                        Hardcover
+                    </label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" step="0.01" required>
+                </fieldset>
+                <fieldset class="form-group">
+                    <button id="book-add" type="submit">Add Book</button>
+                </fieldset>
+            </form>
+            <aside>
+                <h2>Book List</h2>
+                <h4>Sort</h4>
                 
-            </tbody>
-        </table>
-    </section>
+                <select name="sorting" id="dropdownButton">
+                    <option value="" disabled selected hidden>Sortieren</option>
+                    <option value="Title">Title</option>
+                    <option value="Author">Author</option>
+                    <option value="Genre">Genre</option>
+                    <option value="Price">Price</option>
+                </select>
+
+                <h4>Value</h4>
+                <button id="calculate-value">Calculate Value</button>
+                <p id="value-view"></p>
+            </aside> 
+        </section>
+        <section id="section2">
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Hardcover</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+                        
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
     <script src="js/booklist.js"></script>
 </body>
 </html>
